@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 30px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <script>
+        var nome = window.prompt('Digite o seu nome: ');
+        document.write(` Olá <strong>${nome}</strong> , seu nome tem ${nome.length} letras.<br>`);
+        document.write(` O seu nome em maiúscula fica assim ${nome.toUpperCase()} <br>` ) ;
+        document.write(`O seu nome em minuscula fica assim ${nome.toLocaleLowerCase()} <br>`);
+
+    </script>
+</body>
+
+</html>
