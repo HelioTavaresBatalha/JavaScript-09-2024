@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com datas</title>
+</head>
+<body>
+    <script>
+        var data = new Date()
+       // document.writeln(data.getDate()+ '/' + (data.getMonth() +1 )+ '/' + data.getFullYear() )
+        //adicionar / remover dias  
+        document.writeln(data.toDateString())
+        data.setDate(data.getDate() + 90)
+        document.writeln('<hr /> ')
+        document.writeln(data.toString())
+
+        //adicionar / remover meses  
+        document.writeln(data.toDateString())
+        data.setMonth(data.getMonth() + 720)
+        document.writeln('<hr /> ')
+        document.writeln(data.toString())
+
+        //adicionar / remover anos 
+        document.writeln(data.toDateString())
+        data.setFullYear(data.getFullYear() + 90)
+        document.writeln('<hr /> ')
+        document.writeln(data.toString())
+
+    </script>
+</body>
+</html>
